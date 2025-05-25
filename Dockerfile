@@ -19,4 +19,8 @@ ADD ./requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # Install opencv dependencies
-CMD ["/bin/bash"]
+# CMD ["/bin/bash"]
+
+EXPOSE 80
+ENTRYPOINT [ "python" ]
+CMD [ "main.py" ]
