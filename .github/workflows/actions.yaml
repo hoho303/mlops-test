@@ -8,10 +8,10 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: doc-rag  # Add your cluster name here.
+  GKE_CLUSTER: mlops  # Add your cluster name here.
   GKE_ZONE: us-central1-a  # Add your cluster zone here.
-  DEPLOYMENT_NAME: docrag-deploy # Add your deployment name here.
-  IMAGE: docrag # Image Name
+  DEPLOYMENT_NAME: mlops-deploy # Add your deployment name here.
+  IMAGE: mlops # Image Name
 
 jobs:
   setup-build-publish-deploy:

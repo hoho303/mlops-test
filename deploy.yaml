@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: docrag-deploy
+  name: mlops-deploy
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: docrag-pod
+      app: mlops-pod
   template:
     metadata:
       labels:
-        app: docrag-pod
+        app: mlops-pod
     spec:
       containers:
-      - name: mydocragcontainer
+      - name: mymlopscontainer
         image: gcr.io/PROJECT_ID/IMAGE:TAG
         ports:
         - containerPort: 80
